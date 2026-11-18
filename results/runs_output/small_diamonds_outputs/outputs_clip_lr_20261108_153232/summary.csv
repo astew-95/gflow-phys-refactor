@@ -1,0 +1,2 @@
+run,method,lr,clip,seed,status,updates,final_kl_qp,final_kl_pq,final_tv,best_kl_qp,train_seconds,elapsed_seconds,peak_rss_mib,clip_fraction,mean_preclip_grad_norm,slot_wall_seconds,first_kl_le_0.1_train_s,first_kl_le_0.1_wall_s,first_kl_le_0.01_train_s,first_kl_le_0.01_wall_s,first_kl_le_0.001_train_s,first_kl_le_0.001_wall_s
+run_00,ld,0.003,off,0,error,0,,,,,0.0,0.002885624999180436,18.703125,,,0.23790529184043407,,,,,,

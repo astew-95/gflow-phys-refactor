@@ -1,0 +1,129 @@
+{
+  "config": {
+    "method": "ld",
+    "lr": 0.003,
+    "clip": 1.0,
+    "seed": 0,
+    "threads": 2,
+    "max_iters": 8000,
+    "soft_seconds": 18.055555555555557,
+    "result_path": "/Users/alexastewart/research/gflow-phys/small_diamonds/outputs/local_diamond_clip_20261111_151956/run_08.json"
+  },
+  "status": "time_cap",
+  "curve": [
+    {
+      "it": 0,
+      "train_seconds": 0.0,
+      "elapsed_seconds": 1.5327616250142455,
+      "clip_fraction": 0.0,
+      "mean_preclip_grad_norm": 0.0,
+      "kl_qp": 2.788834694236439,
+      "kl_pq": 3.6111904628397014,
+      "tv": 0.813397610388215,
+      "ld": 3.5276075590711926
+    },
+    {
+      "it": 1,
+      "train_seconds": 0.1857926668599248,
+      "elapsed_seconds": 1.7931108330376446,
+      "clip_fraction": 0.0,
+      "mean_preclip_grad_norm": 0.3921687499768823,
+      "kl_qp": 2.750403202220388,
+      "kl_pq": 3.562792561007237,
+      "tv": 0.8118244978104368,
+      "ld": 3.4562453014396866
+    },
+    {
+      "it": 32,
+      "train_seconds": 5.346177168190479,
+      "elapsed_seconds": 7.0288747909944504,
+      "clip_fraction": 0.8125,
+      "mean_preclip_grad_norm": 3.4208238481263193,
+      "kl_qp": 0.2878702401203562,
+      "kl_pq": 1.18795741746573,
+      "tv": 0.289485785279533,
+      "ld": 0.09890745447663107
+    },
+    {
+      "it": 62,
+      "train_seconds": 10.412692127982154,
+      "elapsed_seconds": 12.16834683297202,
+      "clip_fraction": 0.8387096774193549,
+      "mean_preclip_grad_norm": 2.848589548960444,
+      "kl_qp": 0.12131181774091078,
+      "kl_pq": 0.2692667226702913,
+      "tv": 0.17218685051674176,
+      "ld": 0.1325016773034946
+    },
+    {
+      "it": 93,
+      "train_seconds": 15.53993071243167,
+      "elapsed_seconds": 17.36792454100214,
+      "clip_fraction": 0.5591397849462365,
+      "mean_preclip_grad_norm": 2.0433861228571413,
+      "kl_qp": 0.046785553331341295,
+      "kl_pq": 0.05964336393217428,
+      "tv": 0.07334781291990783,
+      "ld": 0.1023980874326611
+    },
+    {
+      "it": 98,
+      "train_seconds": 16.36675025243312,
+      "elapsed_seconds": 18.26751466607675,
+      "clip_fraction": 0.5306122448979592,
+      "mean_preclip_grad_norm": 1.948706571059371,
+      "kl_qp": 0.040768690821719196,
+      "kl_pq": 0.04841734046329629,
+      "tv": 0.06638374319544535,
+      "ld": 0.09269965506852884
+    }
+  ],
+  "updates": 98,
+  "clipped_steps": 52,
+  "grad_norm_sum": 190.97324396381836,
+  "train_seconds": 16.36675025243312,
+  "resolved": {
+    "D": 9,
+    "T": 2.27,
+    "kind": "ising",
+    "dag": "free",
+    "grad": "exact",
+    "weights": "onpolicy",
+    "loss_weights": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "policy": "FreeOrderPolicy(hidden=128)",
+    "schedule": "constant",
+    "dtype": "float64",
+    "torch_version": "2.15.0",
+    "adam_betas": [
+      0.9,
+      0.999
+    ],
+    "adam_eps": 1e-08,
+    "threads": 2
+  },
+  "source_sha256": {
+    "/Users/alexastewart/research/gflow-phys/small_diamonds/code/kc_exact.py": "613a1c7629f7dcb580c3d3557c94943927c1f63170e92042af48331c1a1ad62a",
+    "/Users/alexastewart/research/gflow-phys/small_diamonds/code/loop_gfn.py": "853229657b1026c589910408edbd72a8d9c3187b3d16b9d73487c873cbc99a8d",
+    "/Users/alexastewart/research/gflow-phys/small_diamonds/code/spin_glass_lib.py": "4b333b716e74132a6f6b3869ebbca810defe66feb70974c403e64bfef8235ce0",
+    "/Users/alexastewart/research/gflow-phys/small_diamonds/diamond_clip_sweep.py": "809f20343ef1509d44947ee319e6228a1b529ec20b50c3831df5e86116e7517a"
+  },
+  "final": {
+    "it": 98,
+    "train_seconds": 16.36675025243312,
+    "elapsed_seconds": 18.26751466607675,
+    "clip_fraction": 0.5306122448979592,
+    "mean_preclip_grad_norm": 1.948706571059371,
+    "kl_qp": 0.040768690821719196,
+    "kl_pq": 0.04841734046329629,
+    "tv": 0.06638374319544535,
+    "ld": 0.09269965506852884
+  },
+  "elapsed_seconds": 18.26838858309202,
+  "peak_rss_mib": 578.796875,
+  "slot_wall_seconds": 18.680178791983053
+}

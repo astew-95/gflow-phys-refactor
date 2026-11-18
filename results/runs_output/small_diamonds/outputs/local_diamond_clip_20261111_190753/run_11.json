@@ -1,0 +1,217 @@
+{
+  "config": {
+    "method": "ld",
+    "lr": 0.003,
+    "clip": 0.1,
+    "seed": 0,
+    "threads": 2,
+    "max_iters": 8000,
+    "soft_seconds": 59.72222222222223,
+    "result_path": "/Users/alexastewart/research/gflow-phys/small_diamonds/outputs/local_diamond_clip_20261111_190753/run_11.json"
+  },
+  "status": "time_cap",
+  "curve": [
+    {
+      "it": 0,
+      "train_seconds": 0.0,
+      "elapsed_seconds": 1.6863984998781234,
+      "clip_fraction": 0.0,
+      "mean_preclip_grad_norm": 0.0,
+      "kl_qp": 2.788834694236439,
+      "kl_pq": 3.6111904628397014,
+      "tv": 0.813397610388215,
+      "ld": 3.5276075590711926
+    },
+    {
+      "it": 1,
+      "train_seconds": 0.1868282500654459,
+      "elapsed_seconds": 1.9479567920789123,
+      "clip_fraction": 1.0,
+      "mean_preclip_grad_norm": 0.3921687499768823,
+      "kl_qp": 2.750404792826478,
+      "kl_pq": 3.562794081459563,
+      "tv": 0.8118245400297595,
+      "ld": 3.456248862118734
+    },
+    {
+      "it": 31,
+      "train_seconds": 5.194884414086118,
+      "elapsed_seconds": 7.031262584030628,
+      "clip_fraction": 1.0,
+      "mean_preclip_grad_norm": 3.4174267799916067,
+      "kl_qp": 0.307241451204249,
+      "kl_pq": 1.2873418117258442,
+      "tv": 0.2993665834502497,
+      "ld": 0.1156145944307525
+    },
+    {
+      "it": 61,
+      "train_seconds": 10.27077199658379,
+      "elapsed_seconds": 12.180578584084287,
+      "clip_fraction": 1.0,
+      "mean_preclip_grad_norm": 2.7753940923319442,
+      "kl_qp": 0.13003969462279708,
+      "kl_pq": 0.3045298079306405,
+      "tv": 0.1779495101644363,
+      "ld": 0.11674651522662316
+    },
+    {
+      "it": 92,
+      "train_seconds": 15.40696287015453,
+      "elapsed_seconds": 17.390028666937724,
+      "clip_fraction": 1.0,
+      "mean_preclip_grad_norm": 1.9827124040559343,
+      "kl_qp": 0.03624998658320612,
+      "kl_pq": 0.04017203097440717,
+      "tv": 0.06436231782245083,
+      "ld": 0.09158199404829759
+    },
+    {
+      "it": 123,
+      "train_seconds": 20.54414137126878,
+      "elapsed_seconds": 22.600178916938603,
+      "clip_fraction": 1.0,
+      "mean_preclip_grad_norm": 1.5264908129652224,
+      "kl_qp": 0.003561701517311488,
+      "kl_pq": 0.0034554005348832965,
+      "tv": 0.01814930103684944,
+      "ld": 0.026868556634326524
+    },
+    {
+      "it": 154,
+      "train_seconds": 25.669843786163256,
+      "elapsed_seconds": 27.799220375018194,
+      "clip_fraction": 1.0,
+      "mean_preclip_grad_norm": 1.2507716392979076,
+      "kl_qp": 0.002222561025140906,
+      "kl_pq": 0.002152821940232973,
+      "tv": 0.01392762672847877,
+      "ld": 0.018501451952317893
+    },
+    {
+      "it": 185,
+      "train_seconds": 30.813122536521405,
+      "elapsed_seconds": 33.01572808390483,
+      "clip_fraction": 1.0,
+      "mean_preclip_grad_norm": 1.0678367672286122,
+      "kl_qp": 0.0015977247942296656,
+      "kl_pq": 0.0015711956588841812,
+      "tv": 0.015257075446309668,
+      "ld": 0.013859343577848904
+    },
+    {
+      "it": 215,
+      "train_seconds": 35.81769932759926,
+      "elapsed_seconds": 38.09359629196115,
+      "clip_fraction": 0.9953488372093023,
+      "mean_preclip_grad_norm": 0.9426541691618968,
+      "kl_qp": 0.0011207218678162606,
+      "kl_pq": 0.001104422851308024,
+      "tv": 0.013229648360821678,
+      "ld": 0.010996393340136024
+    },
+    {
+      "it": 246,
+      "train_seconds": 40.95950982882641,
+      "elapsed_seconds": 43.30959583399817,
+      "clip_fraction": 0.9959349593495935,
+      "mean_preclip_grad_norm": 0.8469931474043241,
+      "kl_qp": 0.0007802797073279025,
+      "kl_pq": 0.0007669546800946601,
+      "tv": 0.009242687943593826,
+      "ld": 0.008914089644534329
+    },
+    {
+      "it": 277,
+      "train_seconds": 46.094210661016405,
+      "elapsed_seconds": 48.51749504194595,
+      "clip_fraction": 0.9963898916967509,
+      "mean_preclip_grad_norm": 0.7715071867387702,
+      "kl_qp": 0.0004498593013179573,
+      "kl_pq": 0.0004435412434474192,
+      "tv": 0.006226526229558548,
+      "ld": 0.0067545591033848495
+    },
+    {
+      "it": 308,
+      "train_seconds": 51.23530928348191,
+      "elapsed_seconds": 53.73203249997459,
+      "clip_fraction": 0.9967532467532467,
+      "mean_preclip_grad_norm": 0.71381107528099,
+      "kl_qp": 0.0008249248123751859,
+      "kl_pq": 0.0007937515390884589,
+      "tv": 0.011568523894510012,
+      "ld": 0.00904485933294552
+    },
+    {
+      "it": 339,
+      "train_seconds": 56.373039533151314,
+      "elapsed_seconds": 58.94328729202971,
+      "clip_fraction": 0.9970501474926253,
+      "mean_preclip_grad_norm": 0.6718132892558198,
+      "kl_qp": 0.0021311651780470744,
+      "kl_pq": 0.002126866773956841,
+      "tv": 0.030199561869646327,
+      "ld": 0.01027221559442637
+    },
+    {
+      "it": 344,
+      "train_seconds": 57.206662700045854,
+      "elapsed_seconds": 59.8503360839095,
+      "clip_fraction": 0.997093023255814,
+      "mean_preclip_grad_norm": 0.6661908633427872,
+      "kl_qp": 0.0003959764781657697,
+      "kl_pq": 0.0003967127159312774,
+      "tv": 0.0078981542132883,
+      "ld": 0.005749535604877565
+    }
+  ],
+  "updates": 344,
+  "clipped_steps": 343,
+  "grad_norm_sum": 229.1696569899188,
+  "train_seconds": 57.206662700045854,
+  "resolved": {
+    "D": 9,
+    "T": 2.27,
+    "kind": "ising",
+    "dag": "free",
+    "grad": "exact",
+    "weights": "onpolicy",
+    "loss_weights": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "policy": "FreeOrderPolicy(hidden=128)",
+    "schedule": "constant",
+    "dtype": "float64",
+    "torch_version": "2.15.0",
+    "adam_betas": [
+      0.9,
+      0.999
+    ],
+    "adam_eps": 1e-08,
+    "threads": 2
+  },
+  "source_sha256": {
+    "/Users/alexastewart/research/gflow-phys/small_diamonds/code/kc_exact.py": "613a1c7629f7dcb580c3d3557c94943927c1f63170e92042af48331c1a1ad62a",
+    "/Users/alexastewart/research/gflow-phys/small_diamonds/code/loop_gfn.py": "853229657b1026c589910408edbd72a8d9c3187b3d16b9d73487c873cbc99a8d",
+    "/Users/alexastewart/research/gflow-phys/small_diamonds/code/spin_glass_lib.py": "4b333b716e74132a6f6b3869ebbca810defe66feb70974c403e64bfef8235ce0",
+    "/Users/alexastewart/research/gflow-phys/small_diamonds/diamond_clip_sweep.py": "809f20343ef1509d44947ee319e6228a1b529ec20b50c3831df5e86116e7517a"
+  },
+  "final": {
+    "it": 344,
+    "train_seconds": 57.206662700045854,
+    "elapsed_seconds": 59.8503360839095,
+    "clip_fraction": 0.997093023255814,
+    "mean_preclip_grad_norm": 0.6661908633427872,
+    "kl_qp": 0.0003959764781657697,
+    "kl_pq": 0.0003967127159312774,
+    "tv": 0.0078981542132883,
+    "ld": 0.005749535604877565
+  },
+  "elapsed_seconds": 59.85125533398241,
+  "peak_rss_mib": 582.28125,
+  "slot_wall_seconds": 60.24371787509881
+}

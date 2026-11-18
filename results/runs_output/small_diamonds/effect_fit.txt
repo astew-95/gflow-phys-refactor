@@ -1,0 +1,6 @@
+L1 fit: intercept -0.50%, slope +0.054% per doubling of (1+K), 95% CI [-0.134, +0.194]
+median % change by K: {0: np.float64(-0.42), 2: np.float64(-0.43), 8: np.float64(-0.03), 32: np.float64(-0.3)}
+K=2: lower mean KL than baseline at 7/12 temperatures
+K=8: lower mean KL than baseline at 6/12 temperatures
+K=32: lower mean KL than baseline at 5/12 temperatures
+wrote /home/sergio.cuadra001/Spin_Models/figures/loop_sdk

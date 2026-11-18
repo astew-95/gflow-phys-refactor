@@ -1,0 +1,92 @@
+alexastewart@Alexas-MacBook-Pro-3 ~/research/g<factor/.venv/bin/activate
+(.venv) alexastewart@Alexas-MacBook-Pro-3 ~/re
+(.venv) alexastewart@Alexas-MacBook-Pro-3 ~/research/gflow-phys-refactor> chmod +x /Users/alexastewart/research/gflow-phys-refactor/scripts/smoke_tests.sh
+(.venv) alexastewart@Alexas-MacBook-Pro-3 ~/research/gflow-phys-refactor> /Users/alexastewart/research/gflow-phys-refactor/scripts/smoke_tests.sh
+No project Python files found. Pass the repository root as argument 1.
+(.venv) alexastewart@Alexas-MacBook-Pro-3 ~/research/gflow-phys-refactor> /Users/alexastewart/research/gflow-phys-refactor/scripts/smoke_tests.sh /Users/alexastewart/research/gflow-phys-refactor      
+Repository: /Users/alexastewart/research/gflow-phys-refactor
+Python: /Users/alexastewart/research/gflow-phys/.venv/bin/python3
+Files: 37
+FAIL imports experiments/demos/small_diamonds/demo_small_diamonds.py (exit 1)
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+  File "/Users/alexastewart/research/gflow-phys-refactor/theory/kc_exact.py", line 48, in <module>
+    from archive.spin_glass_lib import SpinEnv
+ModuleNotFoundError: No module named 'archive'
+PASS syntax + imports experiments/scripts/diamond_clip_sweep.py
+FAIL imports experiments/scripts/loop_big.py (exit 1)
+Traceback (most recent call last):
+  File "<string>", line 9, in <module>
+  File "/Users/alexastewart/research/gflow-phys-refactor/experiments/scripts/loop_grid.py", line 22, in <module>
+    from experiments.scripts.loop_gfn import LoopGFlowNet, LOOP_PRESETS
+  File "/Users/alexastewart/research/gflow-phys-refactor/experiments/scripts/loop_gfn.py", line 58, in <module>
+    from archive.spin_glass_lib import (
+ModuleNotFoundError: No module named 'archive'
+FAIL imports experiments/scripts/loop_gfn.py (exit 1)
+Traceback (most recent call last):
+  File "<string>", line 7, in <module>
+ModuleNotFoundError: No module named 'archive'
+FAIL imports experiments/scripts/loop_grid.py (exit 1)
+Traceback (most recent call last):
+  File "<string>", line 9, in <module>
+  File "/Users/alexastewart/research/gflow-phys-refactor/experiments/scripts/loop_gfn.py", line 58, in <module>
+    from archive.spin_glass_lib import (
+ModuleNotFoundError: No module named 'archive'
+PASS syntax + imports experiments/scripts/main_diamond_clip.py
+PASS syntax + imports experiments/scripts/main_diamond_clip_sweep.py
+FAIL imports experiments/scripts/tc_sweep.py (exit 1)
+Traceback (most recent call last):
+  File "<string>", line 13, in <module>
+ImportError: cannot import name 'LR_LOGZ_MULT' from 'models.mcmc' (/Users/alexastewart/research/gflow-phys-refactor/models/mcmc.py)
+FAIL imports experiments/scripts/test_loop_gfn.py (exit 1)
+Traceback (most recent call last):
+  File "<string>", line 7, in <module>
+  File "/Users/alexastewart/research/gflow-phys-refactor/experiments/scripts/loop_gfn.py", line 58, in <module>
+    from archive.spin_glass_lib import (
+ModuleNotFoundError: No module named 'archive'
+PASS syntax + imports experiments/scripts/tilt_5x5_probe.py
+PASS syntax + imports experiments/scripts/tilt_early_probe.py
+PASS syntax + imports experiments/scripts/tilt_early_probe_save.py
+PASS syntax models/ffn.py (no direct module-level imports)
+PASS syntax models/gflownet-save.py (no direct module-level imports)
+PASS syntax + imports models/gflownet.py
+PASS syntax + imports models/mcmc.py
+PASS syntax + imports models/policy.py
+PASS syntax physics/__init__.py (no direct module-level imports)
+PASS syntax + imports physics/observables.py
+PASS syntax physics/save_spin_env.py (no direct module-level imports)
+PASS syntax + imports physics/sk_exact_enumeration_D10.py
+FAIL imports physics/spin_glass_lib.py (exit 1)
+Traceback (most recent call last):
+  File "<string>", line 10, in <module>
+ImportError: cannot import name 'make_batch_size_schedule' from 'models.gflownet' (/Users/alexastewart/research/gflow-phys-refactor/models/gflownet.py)
+PASS syntax + imports physics/spin_system.py
+PASS syntax + imports postprocessing/compute_tc.py
+PASS syntax + imports postprocessing/data_aggregate_to_sql.py
+FAIL imports postprocessing/diagnose_loops.py (exit 1)
+Traceback (most recent call last):
+  File "<string>", line 6, in <module>
+ImportError: cannot import name 'run_mcmc' from 'utils.mcmc_utils' (/Users/alexastewart/research/gflow-phys-refactor/utils/mcmc_utils.py)
+PASS syntax + imports postprocessing/make_plots.py
+PASS syntax + imports postprocessing/multi_N_crossing_bootstrap.py
+PASS syntax + imports postprocessing/plot_loop_sdk.py
+PASS syntax + imports postprocessing/summarize_kc_ising3.py
+PASS syntax + imports postprocessing/summarize_kc_ladder.py
+PASS syntax + imports theory/ising_exact.py
+FAIL imports theory/kc_exact.py (exit 1)
+Traceback (most recent call last):
+  File "<string>", line 5, in <module>
+ModuleNotFoundError: No module named 'archive'
+FAIL imports theory/loop_d8_exact_check.py (exit 1)
+Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "/Users/alexastewart/research/gflow-phys-refactor/experiments/scripts/loop_gfn.py", line 58, in <module>
+    from archive.spin_glass_lib import (
+ModuleNotFoundError: No module named 'archive'
+PASS syntax utils/mcmc_utils.py (no direct module-level imports)
+PASS syntax utils/misc.py (no direct module-level imports)
+PASS syntax utils/model_utils.py (no direct module-level imports)
+
+37 files; 30 import groups; 7 syntax-only files; 10 failed.
+Scope: direct module-level imports only. Conditional, function-local, dynamic imports and runtime behavior require separate tests.
+(.venv) alexastewart@Alexas-MacBook-Pro-3 ~/research/gflow-phys-refactor>    

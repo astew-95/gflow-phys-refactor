@@ -1,0 +1,129 @@
+{
+  "config": {
+    "method": "ld",
+    "lr": 0.003,
+    "clip": 1.0,
+    "seed": 1,
+    "threads": 2,
+    "max_iters": 8000,
+    "soft_seconds": 18.055555555555557,
+    "result_path": "/Users/alexastewart/research/gflow-phys/small_diamonds/outputs/local_diamond_clip_20261111_151956/run_21.json"
+  },
+  "status": "time_cap",
+  "curve": [
+    {
+      "it": 0,
+      "train_seconds": 0.0,
+      "elapsed_seconds": 1.5543789591174573,
+      "clip_fraction": 0.0,
+      "mean_preclip_grad_norm": 0.0,
+      "kl_qp": 2.787761091097688,
+      "kl_pq": 3.6169133243126734,
+      "tv": 0.8140910182368186,
+      "ld": 3.515968005340028
+    },
+    {
+      "it": 1,
+      "train_seconds": 0.19041879195719957,
+      "elapsed_seconds": 1.819770541973412,
+      "clip_fraction": 0.0,
+      "mean_preclip_grad_norm": 0.3372384847604839,
+      "kl_qp": 2.749601405027418,
+      "kl_pq": 3.5596447448859836,
+      "tv": 0.8117217738780979,
+      "ld": 3.4556169671093
+    },
+    {
+      "it": 29,
+      "train_seconds": 5.286618628073484,
+      "elapsed_seconds": 6.993983334163204,
+      "clip_fraction": 0.7931034482758621,
+      "mean_preclip_grad_norm": 4.469760238269415,
+      "kl_qp": 0.2731451821114458,
+      "kl_pq": 0.8399521442396004,
+      "tv": 0.2762951625602442,
+      "ld": 0.1991232746535445
+    },
+    {
+      "it": 59,
+      "train_seconds": 10.40397529117763,
+      "elapsed_seconds": 12.185910542029887,
+      "clip_fraction": 0.8983050847457628,
+      "mean_preclip_grad_norm": 3.868462465309501,
+      "kl_qp": 0.16735671995930843,
+      "kl_pq": 0.38355429137237906,
+      "tv": 0.21936373375884294,
+      "ld": 0.10042748795902412
+    },
+    {
+      "it": 90,
+      "train_seconds": 15.563424998195842,
+      "elapsed_seconds": 17.4186192501802,
+      "clip_fraction": 0.6888888888888889,
+      "mean_preclip_grad_norm": 2.8122940373821432,
+      "kl_qp": 0.052996453604529384,
+      "kl_pq": 0.06436748841182363,
+      "tv": 0.08344311440993968,
+      "ld": 0.13119957637633206
+    },
+    {
+      "it": 94,
+      "train_seconds": 16.22480278927833,
+      "elapsed_seconds": 18.152524834033102,
+      "clip_fraction": 0.6595744680851063,
+      "mean_preclip_grad_norm": 2.7067175491296718,
+      "kl_qp": 0.047822564763289194,
+      "kl_pq": 0.055200031369674475,
+      "tv": 0.06864955855855517,
+      "ld": 0.12188311684521125
+    }
+  ],
+  "updates": 94,
+  "clipped_steps": 62,
+  "grad_norm_sum": 254.43144961818916,
+  "train_seconds": 16.22480278927833,
+  "resolved": {
+    "D": 9,
+    "T": 2.27,
+    "kind": "ising",
+    "dag": "free",
+    "grad": "exact",
+    "weights": "onpolicy",
+    "loss_weights": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "policy": "FreeOrderPolicy(hidden=128)",
+    "schedule": "constant",
+    "dtype": "float64",
+    "torch_version": "2.15.0",
+    "adam_betas": [
+      0.9,
+      0.999
+    ],
+    "adam_eps": 1e-08,
+    "threads": 2
+  },
+  "source_sha256": {
+    "/Users/alexastewart/research/gflow-phys/small_diamonds/code/kc_exact.py": "613a1c7629f7dcb580c3d3557c94943927c1f63170e92042af48331c1a1ad62a",
+    "/Users/alexastewart/research/gflow-phys/small_diamonds/code/loop_gfn.py": "853229657b1026c589910408edbd72a8d9c3187b3d16b9d73487c873cbc99a8d",
+    "/Users/alexastewart/research/gflow-phys/small_diamonds/code/spin_glass_lib.py": "4b333b716e74132a6f6b3869ebbca810defe66feb70974c403e64bfef8235ce0",
+    "/Users/alexastewart/research/gflow-phys/small_diamonds/diamond_clip_sweep.py": "809f20343ef1509d44947ee319e6228a1b529ec20b50c3831df5e86116e7517a"
+  },
+  "final": {
+    "it": 94,
+    "train_seconds": 16.22480278927833,
+    "elapsed_seconds": 18.152524834033102,
+    "clip_fraction": 0.6595744680851063,
+    "mean_preclip_grad_norm": 2.7067175491296718,
+    "kl_qp": 0.047822564763289194,
+    "kl_pq": 0.055200031369674475,
+    "tv": 0.06864955855855517,
+    "ld": 0.12188311684521125
+  },
+  "elapsed_seconds": 18.153274125186726,
+  "peak_rss_mib": 616.21875,
+  "slot_wall_seconds": 18.577190540963784
+}

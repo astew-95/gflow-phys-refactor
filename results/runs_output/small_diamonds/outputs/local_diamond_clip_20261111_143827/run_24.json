@@ -1,0 +1,16 @@
+{
+  "config": {
+    "method": "ld",
+    "lr": 0.0003,
+    "clip": null,
+    "seed": 2,
+    "threads": 2,
+    "max_iters": 8000,
+    "soft_seconds": 0.1,
+    "result_path": "/Users/alexastewart/research/gflow-phys/small_diamonds/outputs/local_diamond_clip_20261111_143827/run_24.json"
+  },
+  "curve": [],
+  "updates": 0,
+  "status": "hard_time_cap",
+  "slot_wall_seconds": 1.3994501670822501
+}

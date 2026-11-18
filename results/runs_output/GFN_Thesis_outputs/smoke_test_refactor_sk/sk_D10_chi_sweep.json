@@ -1,0 +1,93 @@
+{
+  "model": "sk",
+  "D": 10,
+  "N": 5,
+  "T_grid": [
+    0.5,
+    1.0
+  ],
+  "methods": [
+    "TB",
+    "KC",
+    "MCMC"
+  ],
+  "n_disorder": 1,
+  "chi_tb_mean": [
+    0.7520000295639041,
+    1.0880000467300421
+  ],
+  "chi_tb_sem": [
+    0.0,
+    0.0
+  ],
+  "Tc_tb_chi_peak": 1.0,
+  "u4_tb_mean": [
+    0.06311634828053547,
+    0.2110453424624651
+  ],
+  "u4_tb_sem": [
+    0.0,
+    0.0
+  ],
+  "Tcross_tb_binder": 0.75,
+  "chi_kc_mean": [
+    1.184000049591065,
+    0.9760000505447396
+  ],
+  "chi_kc_sem": [
+    0.0,
+    0.0
+  ],
+  "Tc_kc_chi_peak": 0.5,
+  "u4_kc_mean": [
+    0.25944008611400093,
+    0.28458985400684145
+  ],
+  "u4_kc_sem": [
+    0.0,
+    0.0
+  ],
+  "Tcross_kc_binder": 0.75,
+  "chi_mcmc_mean": [
+    6.944000135421754,
+    2.416000102996828
+  ],
+  "chi_mcmc_sem": [
+    0.0,
+    0.0
+  ],
+  "Tc_mcmc_chi_peak": 0.5,
+  "u4_mcmc_mean": [
+    0.6045564542652411,
+    0.24912439002359688
+  ],
+  "u4_mcmc_sem": [
+    0.0,
+    0.0
+  ],
+  "Tcross_mcmc_binder": 0.75,
+  "mcmc_diag_acceptance_rate_mean": [
+    0.19333333333333333,
+    0.38666666666666666
+  ],
+  "mcmc_diag_mean_cluster_fraction_mean": [
+    NaN,
+    NaN
+  ],
+  "mcmc_diag_tau_int_mean": [
+    1.0,
+    1.3704367346267377
+  ],
+  "mcmc_diag_acceptance_rate_sem": [
+    0.0,
+    0.0
+  ],
+  "mcmc_diag_mean_cluster_fraction_sem": [
+    0.0,
+    0.0
+  ],
+  "mcmc_diag_tau_int_sem": [
+    0.0,
+    0.0
+  ]
+}

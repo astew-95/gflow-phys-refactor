@@ -1,0 +1,21 @@
+250 runs. 3x3 periodic Ising, final exact KL(q||p) [TV], best lr per (cell, seed)
+
+condition      dag   objective    weights                    T=2.27               T=1.5               T=1.0               T=0.4
+net/exact      free  basis        onpolicy       7.42e-03 [0.027]   6.86e-01 [0.498]   9.32e-03 [0.054]2  2.50e-01 [0.219]2
+net/exact      free  basis_kw0.1  onpolicy       8.01e-04 [0.008]   3.65e-02 [0.131]   1.41e-03 [0.021]2  1.07e-01 [0.138]2
+net/exact      free  basis_kw10   onpolicy       1.34e-02 [0.036]   6.95e-01 [0.500]   3.58e-02 [0.104]2  8.42e-01 [0.391]2
+net/exact      free  basis_kw100  onpolicy       8.95e-02 [0.149]   6.98e-01 [0.501]   1.62e-01 [0.215]2  1.92e+00 [0.571]2
+net/exact      free  ld           onpolicy       1.16e-05 [0.001]   4.84e-05 [0.001]   2.43e-05 [0.002]2  2.19e-04 [0.003]2
+net/exact      free  ld_basis     onpolicy       1.87e-05 [0.001]   2.40e-04 [0.001]   2.86e-05 [0.003]2  5.46e-04 [0.005]2
+net/exact      free  ld_sdw10     onpolicy       2.26e-05 [0.001]   1.07e-04 [0.001]   3.96e-05 [0.003]2  4.54e-04 [0.004]2
+net/exact      free  ld_sdw100    onpolicy       1.34e-04 [0.002]   7.85e-04 [0.002]   2.16e-04 [0.008]2  3.61e-03 [0.011]2
+net/exact      free  ld_sdw1000   onpolicy       5.67e-03 [0.017]   6.18e-03 [0.008]   5.33e-03 [0.038]2  6.98e-02 [0.080]2
+net/sampled    free  basis        onpolicy       2.33e-01 [0.300]   6.94e-01 [0.500]   1.90e-01 [0.235]2  2.18e+00 [0.608]2
+net/sampled    free  basis_kw10   onpolicy       7.98e-01 [0.520]   2.12e+00 [0.632]   2.63e-01 [0.279]2  2.38e+00 [0.634]2
+net/sampled    free  basis_kw100  onpolicy       1.08e+00 [0.588]   3.23e+00 [0.823]   2.93e-01 [0.295]2  2.48e+00 [0.644]2
+net/sampled    free  ld           onpolicy       1.68e-03 [0.012]   2.77e-03 [0.005]   1.26e-03 [0.018]2  2.38e-02 [0.067]2
+net/sampled    free  ld_basis     onpolicy       1.37e-03 [0.010]   1.15e-03 [0.003]   9.90e-04 [0.016]2  2.45e-02 [0.074]2
+net/sampled    free  ld_sdw100    onpolicy       2.10e-02 [0.043]   5.96e-03 [0.007]   1.56e-02 [0.066]2  2.22e-01 [0.227]2
+net/sampled    free  ld_sdw1000   onpolicy       6.34e-02 [0.084]   6.99e-01 [0.503]   1.72e-01 [0.213]2  9.61e-01 [0.584]2
+
+trailing digit = number of seeds finished, if incomplete

@@ -1,0 +1,56 @@
+{
+  "config": {
+    "seed": 0,
+    "schedule": "original",
+    "T": 2.27,
+    "method": "TB",
+    "tilt_strength": 1.0,
+    "variant": "tilt",
+    "kind": "ising",
+    "dag": "tree",
+    "N": 3,
+    "D": 9,
+    "steps": 20,
+    "schedule_horizon": 3000,
+    "batch": 16,
+    "lr": 0.001,
+    "clip": 1.0,
+    "threads": 1
+  },
+  "source_sha256": {
+    "/Users/alexastewart/research/gflow-phys/GFN_Thesis/tilt_early_probe.py": "0e11a6705fa42ae98a23e1e234cff6dbfd4268b8dd3e7935573f1bf650e96a9e",
+    "/Users/alexastewart/research/gflow-phys/GFN_Thesis/physics/spin_system.py": "86c4040ac45b511099ede0b902570768ba005f707b2908c5fff8209d1231f8b2",
+    "/Users/alexastewart/research/gflow-phys/GFN_Thesis/models/gflownet.py": "305ec1935ed1a7ae420891a2fb55662bf14e03dd2b31b346849ecd560472216a",
+    "/Users/alexastewart/research/gflow-phys/GFN_Thesis/models/policy.py": "9e6259191b051b234866f13465a17f7234c29b08599e2b2c5fb09e53e21ed6d0"
+  },
+  "status": "error",
+  "curve": [],
+  "updates": 0,
+  "torch_version": "2.15.0",
+  "numpy_version": "2.5.4",
+  "device": "cpu",
+  "evaluation": "exact terminal enumeration, all 512 configurations, no exploration",
+  "policy_class": "StepEmbedPolicy",
+  "reference": {
+    "energy_per_spin": -1.610734078224577,
+    "abs_m": 0.8708884466145276,
+    "chi": 0.20112635365979037,
+    "frac_m_pos": 0.49999999999999967,
+    "U4": 0.6200680626595259
+  },
+  "exact_logZ": 9.017920265293975,
+  "optimizer": "Adam",
+  "adam_betas": [
+    0.9,
+    0.999
+  ],
+  "adam_eps": 1e-08,
+  "optimizer_lrs": [
+    0.001,
+    0.05
+  ],
+  "error": "Traceback (most recent call last):\n  File \"/Users/alexastewart/research/gflow-phys/GFN_Thesis/tilt_early_probe.py\", line 236, in run\n    result['implementation_check']=implementation_check(g,ref['acts'])\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexastewart/research/gflow-phys/GFN_Thesis/tilt_early_probe.py\", line 139, in implementation_check\n    raise RuntimeError('Tilt toggle/check failed. Replace tilt_strength=1.0 in BOTH sampling and replay with getattr(self,\"tilt_strength\",1.0). Also check the imported module path.')\nRuntimeError: Tilt toggle/check failed. Replace tilt_strength=1.0 in BOTH sampling and replay with getattr(self,\"tilt_strength\",1.0). Also check the imported module path.\n",
+  "train_seconds": 0.0,
+  "evaluation_seconds": 0.0,
+  "elapsed_seconds": 0.018540167016908526
+}

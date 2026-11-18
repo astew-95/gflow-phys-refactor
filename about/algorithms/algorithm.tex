@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\begin{document}
+
+\section{MCMC}
+
+MCMC evolves a complete spin configuration using Metropolis or Wolff updates, without training a network. Wolff is used for uniform ferromagnetic Ising model and Metropolis otherwise. 
+
+\begin{algorithm}[H]\caption{MCMC Sampling}
+    \begin{algorithmic}[1]
+        \Require Energy $E$, temperature $T>0$, warmup $W$, thinning $K$, sample count $N$, method $m$\State Initialize $x\in\{-1,+1\}^{D}$ uniformly; $\mathcal{S}\gets[\,]$
+        \For{$t=1,\ldots,W+NK$}
+            \If{$m=\mathrm{Metropolis}$}\State 
+                Choose site $i$ uniformly; 
+                compute local $\Delta E=E(x^{(i)})-E(x)$\State With probability $\min\{1,\exp(-\Delta E/T)$, flip $x_i$
+            \Else\State 
+                Choose a uniform seed; 
+                grow cluster $C$ by testing bonds from cluster sites to aligned neighbors outside $C$, adding each with probability $1-e^{-2J/T}$; 
+                flip all spins in $C$
+            \EndIf
+            \If{$t>W$ and $(t-W)\bmod K=0$}\State 
+                Append a copy of $x$ to $\mathcal{S}$
+            \EndIf
+        \EndFor
+    \State
+\Return $\mathcal{S}$
+
+\end{algorithmic}
+\end{algorithm}
+
+\section{Trajectory Balance}
+
+Trajectory balance (TB) trains a GFlowNet by matching complete trajectory probabilities to terminal rewards $R(x)=e^{-E(x)/T}$. The supplied policy uses a fixed site order and predicts two spin logits per step; hence each state has a unique parent and $P_B=1$. The following is a compatible TB training loop; the supplied excerpt defines only the policy.
+
+\begin{algorithm}[H]\caption{GFlowNet Training with TB}
+\begin{algorithmic}[1]\Require Policy parameters $\theta$, learned $\ell=\log Z$, batch size $B$, learning rate $\eta$, temperature $T>0$
+    \While{not converged}
+        \For{$b=1,\ldots,B$}\State 
+            Initialize spins $s\gets0$, mask $m\gets0$, trajectory log-probability $L_b\gets0$
+            \For{$t=0,\ldots,D-1$}\State 
+                $p\gets\operatorname{softmax}(f_\theta(s,m,t))$;
+                sample $v\in\{-1,+1\}$ from $p$\State $L_b\gets L_b+\log p(v)$; 
+                assign $s_t\gets v$, $m_t\gets1$
+            \EndFor\State 
+        $x_b\gets s$; 
+        $\delta_b\gets\ell+L_b+E(x_b)/T$
+        \EndFor\State 
+    $\mathcal{L}_{\mathrm{TB}}\gets B^{-1}\sum_{b=1}^{B}\delta_b^2$; $(\theta,\ell)\gets(\theta,\ell)-\eta\nabla_{\theta,\ell}\mathcal{L}_{\mathrm{TB}}$ 
+\Comment{Hold sampled actions fixed}
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+
+\section{}
+
+\section{Diamond Training}
+Local diamond training encourages consistency between two realizations of the same end state. A diamond consists of two paths that apply the same two assignments in opposite orders, reaching the same partial trajectory. Training penalizes the squared difference between their forward log-probabilities, averaged over sampled diamonds in a batch. This promotes consistency across assignment orders.
+
+\begin{algorithm}[H]\caption{Diamond Training}\begin{algorithmic}[1]
+\Require Policy $P_\theta$, learning rate $\eta$, batch size $B$; uniform backward removal
+\While{not converged}
+\State Sample trajectories from $P_\theta$; select $B$ triples $(s_i,a_i,b_i)$ of states and consecutive assignments
+\For{$i=1,\ldots,B$}
+\State $\delta_i \gets \log P_\theta(a_i\mid s_i)+\log P_\theta(b_i\mid s_i+a_i)-\log P_\theta(b_i\mid s_i)-\log P_\theta(a_i\mid s_i+b_i)$
+\EndFor
+\State $\mathcal{L}_{\mathrm{swap}}\gets B^{-1}\sum_{i=1}^{B}\delta_i^2$;\quad $\theta\gets\theta-\eta\nabla_\theta\mathcal{L}_{\mathrm{swap}}$ \Comment{Hold sampled triples fixed}
+\EndWhile\end{algorithmic}
+\end{algorithm}
+
+\end{document}
+

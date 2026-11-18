@@ -1,0 +1,30 @@
+Critical temperature sweep: model=ising
+============================================================
+Ising 2D (periodic): exact infinite-lattice T_c = 2/ln(1+sqrt(2)) = 2.2692 J (Onsager). Finite-size rounding shifts the susceptibility peak ABOVE this value -- that is expected, not an error.
+
+Methods run: TB, KC, MCMC
+Grid: N=5  D=25  p_af=-
+T sweep: [2.0, 3.0] with 14 points, warm_start=False, n_disorder=1
+n_iter (GFN)=1500  n_eval=800  mcmc_warmup=50000  mcmc_thin=50  lr_logz_mult=50.0  log_loss=True
+
+Estimated T_c (susceptibility peak):
+  TB-GFlowNet:  2.5746
+  KC-GFlowNet:  2.6322
+  MCMC:  2.6179
+
+MCMC diagnostics (avg over disorder seeds):
+  T=2.000  accept=nan  cluster_frac=0.858  tau_int=2.0
+  T=2.077  accept=nan  cluster_frac=0.826  tau_int=2.1
+  T=2.154  accept=nan  cluster_frac=0.788  tau_int=2.3
+  T=2.231  accept=nan  cluster_frac=0.745  tau_int=2.4
+  T=2.308  accept=nan  cluster_frac=0.700  tau_int=2.4
+  T=2.385  accept=nan  cluster_frac=0.654  tau_int=2.7
+  T=2.462  accept=nan  cluster_frac=0.609  tau_int=2.6
+  T=2.538  accept=nan  cluster_frac=0.565  tau_int=2.8
+  T=2.615  accept=nan  cluster_frac=0.522  tau_int=3.0
+  T=2.692  accept=nan  cluster_frac=0.481  tau_int=2.9
+  T=2.769  accept=nan  cluster_frac=0.442  tau_int=3.0
+  T=2.846  accept=nan  cluster_frac=0.407  tau_int=3.2
+  T=2.923  accept=nan  cluster_frac=0.377  tau_int=3.1
+  T=3.000  accept=nan  cluster_frac=0.348  tau_int=3.1
+

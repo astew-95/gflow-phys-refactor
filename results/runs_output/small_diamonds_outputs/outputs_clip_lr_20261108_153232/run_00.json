@@ -1,0 +1,22 @@
+{
+  "config": {
+    "method": "ld",
+    "lr": 0.003,
+    "clip": null,
+    "seed": 0,
+    "threads": 2,
+    "max_iters": 8000,
+    "soft_seconds": 165.0,
+    "result_path": "/Users/alexastewart/research/gflow-phys/small_diamonds/code/outputs_clip_lr_20261108_153232/run_00.json"
+  },
+  "status": "error",
+  "curve": [],
+  "updates": 0,
+  "clipped_steps": 0,
+  "grad_norm_sum": 0.0,
+  "train_seconds": 0.0,
+  "error": "Traceback (most recent call last):\n  File \"/Users/alexastewart/research/gflow-phys/small_diamonds/diamond_clip_sweep.py\", line 70, in worker\n    import torch\nModuleNotFoundError: No module named 'torch'\n",
+  "elapsed_seconds": 0.002885624999180436,
+  "peak_rss_mib": 18.703125,
+  "slot_wall_seconds": 0.23790529184043407
+}

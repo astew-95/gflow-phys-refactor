@@ -1,0 +1,25 @@
+Critical temperature sweep: model=ea
+============================================================
+EA spin glass, 2D nearest-neighbor (as coded here): T_c = 0 rigorously (lower critical dimension > 2). Any peak found is a FINITE-SIZE CROSSOVER, not a real T_c.
+
+Methods run: TB, KC, MCMC
+Grid: N=5  D=25  p_af=0.5
+T sweep: [1.0, 2.0] with 2 points, warm_start=False, n_disorder=1
+n_iter (GFN)=10  n_eval=50  mcmc_warmup=100  mcmc_thin=1  lr_logz_mult=50.0  log_loss=False
+
+PRIMARY ESTIMATE -- Binder cumulant (U4) steepest-slope crossover:
+  T* (TB-GFlowNet):  1.5000  [WARNING: at grid boundary]
+  T* (KC-GFlowNet):  1.5000  [WARNING: at grid boundary]
+  T* (MCMC):  1.5000  [WARNING: at grid boundary]
+
+SECONDARY -- susceptibility chi_SG peak:
+  T_c (TB-GFlowNet):  2.0000  [boundary]
+  T_c (KC-GFlowNet):  1.0000  [boundary]
+  T_c (MCMC):  1.0000  [boundary]
+
+MCMC diagnostics (avg over disorder seeds):
+  T=1.000  accept=0.373  cluster_frac=nan  tau_int=10.4
+  T=2.000  accept=0.453  cluster_frac=nan  tau_int=2.6
+
+WARNING: TB-GFlowNet and MCMC disagree by >35% at 2 T point(s): 1.000, 2.000
+WARNING: KC-GFlowNet and MCMC disagree by >35% at 2 T point(s): 1.000, 2.000

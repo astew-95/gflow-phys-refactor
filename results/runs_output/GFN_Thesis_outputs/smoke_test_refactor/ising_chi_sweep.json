@@ -1,0 +1,66 @@
+{
+  "model": "ising",
+  "D": 5,
+  "N": 5,
+  "T_grid": [
+    2.0,
+    3.0
+  ],
+  "methods": [
+    "TB",
+    "KC",
+    "MCMC"
+  ],
+  "n_disorder": 1,
+  "chi_tb_mean": [
+    0.21324793114256835,
+    0.1330346593367245
+  ],
+  "chi_tb_sem": [
+    0.0,
+    0.0
+  ],
+  "Tc_tb_chi_peak": 2.0,
+  "chi_kc_mean": [
+    0.3119679470605846,
+    0.12194134763510907
+  ],
+  "chi_kc_sem": [
+    0.0,
+    0.0
+  ],
+  "Tc_kc_chi_peak": 2.0,
+  "chi_mcmc_mean": [
+    0.12172846686553385,
+    0.811199380683895
+  ],
+  "chi_mcmc_sem": [
+    0.0,
+    0.0
+  ],
+  "Tc_mcmc_chi_peak": 3.0,
+  "mcmc_diag_acceptance_rate_mean": [
+    NaN,
+    NaN
+  ],
+  "mcmc_diag_mean_cluster_fraction_mean": [
+    0.8565333333333334,
+    0.35333333333333333
+  ],
+  "mcmc_diag_tau_int_mean": [
+    1.0,
+    2.315174603174604
+  ],
+  "mcmc_diag_acceptance_rate_sem": [
+    0.0,
+    0.0
+  ],
+  "mcmc_diag_mean_cluster_fraction_sem": [
+    0.0,
+    0.0
+  ],
+  "mcmc_diag_tau_int_sem": [
+    0.0,
+    0.0
+  ]
+}

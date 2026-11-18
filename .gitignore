@@ -1,0 +1,10 @@
+
+.venv/
+about/gpt-save/
+scripts/*
+!scripts/run_local.sh
+!scripts/setup_env.sh
+slurm/small_diamonds_sergio/
+slurm/small_diamonds_sergio/*
+data/
+

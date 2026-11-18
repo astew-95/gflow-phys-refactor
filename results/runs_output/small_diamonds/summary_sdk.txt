@@ -1,0 +1,73 @@
+108/108 results
+
+T=1.5  exact E/D=-1.9511  Wolff: |m|=0.986 chi=0.028 U4=0.666
+  ld_free     x1 n=3  E_per_spin=-1.946±0.002  abs_m=0.986±0.000  chi=0.019±0.001  U4=0.666±0.000  frac_m_pos=0.667±0.471  kl_q_p=0.780±0.005  ess_frac=0.396±0.301
+  ld_sd2_free x1 n=3  E_per_spin=-1.949±0.002  abs_m=0.987±0.000  chi=0.017±0.001  U4=0.666±0.000  frac_m_pos=0.333±0.471  kl_q_p=0.769±0.002  ess_frac=0.603±0.173
+  ld_sd8_free x1 n=3  E_per_spin=-1.953±0.003  abs_m=0.988±0.001  chi=0.016±0.001  U4=0.666±0.000  frac_m_pos=0.333±0.471  kl_q_p=0.757±0.011  ess_frac=0.480±0.159
+  ld_sd32_free x1 n=3  E_per_spin=-1.951±0.001  abs_m=0.988±0.000  chi=0.017±0.001  U4=0.666±0.000  frac_m_pos=0.667±0.471  kl_q_p=0.754±0.003  ess_frac=0.645±0.043
+
+T=1.8  exact E/D=-1.8593  Wolff: |m|=0.957 chi=0.115 U4=0.664
+  ld_free     x1 n=3  E_per_spin=-1.869±0.005  abs_m=0.966±0.001  chi=0.040±0.001  U4=0.666±0.000  frac_m_pos=0.333±0.471  kl_q_p=0.984±0.016  ess_frac=0.196±0.133
+  ld_sd2_free x1 n=3  E_per_spin=-1.874±0.005  abs_m=0.968±0.001  chi=0.037±0.001  U4=0.666±0.000  frac_m_pos=0.333±0.471  kl_q_p=0.979±0.013  ess_frac=0.208±0.113
+  ld_sd8_free x1 n=3  E_per_spin=-1.873±0.003  abs_m=0.968±0.001  chi=0.037±0.001  U4=0.666±0.000  frac_m_pos=0.667±0.471  kl_q_p=0.987±0.011  ess_frac=0.144±0.177
+  ld_sd32_free x1 n=3  E_per_spin=-1.872±0.006  abs_m=0.967±0.001  chi=0.036±0.002  U4=0.666±0.000  frac_m_pos=0.333±0.471  kl_q_p=0.993±0.026  ess_frac=0.255±0.120
+
+T=2.0  exact E/D=-1.7454  Wolff: |m|=0.911 chi=0.366 U4=0.658
+  ld_free     x1 n=3  E_per_spin=-1.797±0.003  abs_m=0.947±0.001  chi=0.060±0.002  U4=0.665±0.000  frac_m_pos=0.000±0.000  kl_q_p=1.280±0.011  ess_frac=0.057±0.041
+  ld_sd2_free x1 n=3  E_per_spin=-1.792±0.008  abs_m=0.946±0.002  chi=0.057±0.002  U4=0.665±0.000  frac_m_pos=0.667±0.471  kl_q_p=1.309±0.026  ess_frac=0.074±0.066
+  ld_sd8_free x1 n=3  E_per_spin=-1.806±0.006  abs_m=0.950±0.002  chi=0.053±0.003  U4=0.665±0.000  frac_m_pos=0.667±0.471  kl_q_p=1.288±0.008  ess_frac=0.132±0.070
+  ld_sd32_free x1 n=3  E_per_spin=-1.801±0.011  abs_m=0.949±0.003  chi=0.055±0.003  U4=0.665±0.000  frac_m_pos=0.667±0.471  kl_q_p=1.287±0.017  ess_frac=0.144±0.013
+
+T=2.1  exact E/D=-1.6633  Wolff: |m|=0.871 chi=0.725 U4=0.649
+  ld_free     x1 n=3  E_per_spin=-1.749±0.010  abs_m=0.934±0.003  chi=0.074±0.004  U4=0.664±0.000  frac_m_pos=0.333±0.471  kl_q_p=1.488±0.026  ess_frac=0.042±0.058
+  ld_sd2_free x1 n=3  E_per_spin=-1.753±0.003  abs_m=0.935±0.001  chi=0.069±0.001  U4=0.665±0.000  frac_m_pos=1.000±0.000  kl_q_p=1.514±0.006  ess_frac=0.020±0.013
+  ld_sd8_free x1 n=3  E_per_spin=-1.739±0.019  abs_m=0.932±0.005  chi=0.073±0.007  U4=0.664±0.000  frac_m_pos=0.000±0.000  kl_q_p=1.547±0.039  ess_frac=0.025±0.009
+  ld_sd32_free x1 n=3  E_per_spin=-1.755±0.011  abs_m=0.936±0.003  chi=0.068±0.005  U4=0.665±0.000  frac_m_pos=0.667±0.471  kl_q_p=1.511±0.031  ess_frac=0.052±0.037
+
+T=2.2  exact E/D=-1.5597  Wolff: |m|=0.812 chi=1.267 U4=0.633
+  ld_free     x1 n=3  E_per_spin=-1.687±0.005  abs_m=0.917±0.001  chi=0.095±0.003  U4=0.663±0.000  frac_m_pos=0.333±0.471  kl_q_p=1.819±0.042  ess_frac=0.018±0.022
+  ld_sd2_free x1 n=3  E_per_spin=-1.691±0.006  abs_m=0.918±0.001  chi=0.091±0.003  U4=0.664±0.000  frac_m_pos=0.667±0.471  kl_q_p=1.839±0.034  ess_frac=0.023±0.026
+  ld_sd8_free x1 n=3  E_per_spin=-1.696±0.012  abs_m=0.920±0.003  chi=0.088±0.001  U4=0.664±0.000  frac_m_pos=0.667±0.471  kl_q_p=1.840±0.046  ess_frac=0.023±0.011
+  ld_sd32_free x1 n=3  E_per_spin=-1.684±0.011  abs_m=0.916±0.003  chi=0.091±0.008  U4=0.664±0.000  frac_m_pos=1.000±0.000  kl_q_p=1.852±0.021  ess_frac=0.016±0.013
+
+T=2.27  exact E/D=-1.4752  Wolff: |m|=0.753 chi=1.827 U4=0.611
+  ld_free     x1 n=3  E_per_spin=-1.651±0.022  abs_m=0.907±0.006  chi=0.104±0.003  U4=0.663±0.000  frac_m_pos=0.667±0.471  kl_q_p=2.113±0.084  ess_frac=0.002±0.001
+  ld_sd2_free x1 n=3  E_per_spin=-1.636±0.017  abs_m=0.903±0.005  chi=0.104±0.007  U4=0.663±0.000  frac_m_pos=0.667±0.471  kl_q_p=2.136±0.041  ess_frac=0.021±0.014
+  ld_sd8_free x1 n=3  E_per_spin=-1.665±0.018  abs_m=0.911±0.005  chi=0.099±0.006  U4=0.663±0.000  frac_m_pos=0.667±0.471  kl_q_p=2.084±0.049  ess_frac=0.022±0.015
+  ld_sd32_free x1 n=3  E_per_spin=-1.648±0.001  abs_m=0.906±0.000  chi=0.105±0.002  U4=0.663±0.000  frac_m_pos=0.667±0.471  kl_q_p=2.091±0.011  ess_frac=0.031±0.021
+
+T=2.35  exact E/D=-1.3717  Wolff: |m|=0.684 chi=2.271 U4=0.581
+  ld_free     x1 n=3  E_per_spin=-1.588±0.015  abs_m=0.888±0.004  chi=0.134±0.013  U4=0.662±0.000  frac_m_pos=0.667±0.471  kl_q_p=2.466±0.060  ess_frac=0.010±0.009
+  ld_sd2_free x1 n=3  E_per_spin=-1.614±0.034  abs_m=0.896±0.010  chi=0.115±0.011  U4=0.662±0.000  frac_m_pos=0.667±0.471  kl_q_p=2.443±0.012  ess_frac=0.009±0.008
+  ld_sd8_free x1 n=3  E_per_spin=-1.606±0.004  abs_m=0.894±0.001  chi=0.118±0.011  U4=0.662±0.000  frac_m_pos=0.333±0.471  kl_q_p=2.419±0.019  ess_frac=0.011±0.013
+  ld_sd32_free x1 n=3  E_per_spin=-1.598±0.004  abs_m=0.892±0.001  chi=0.123±0.005  U4=0.662±0.000  frac_m_pos=0.667±0.471  kl_q_p=2.475±0.016  ess_frac=0.012±0.002
+
+T=2.45  exact E/D=-1.2440  Wolff: |m|=0.586 chi=2.605 U4=0.524
+  ld_free     x1 n=3  E_per_spin=-1.519±0.026  abs_m=0.867±0.008  chi=0.181±0.023  U4=0.660±0.001  frac_m_pos=0.667±0.471  kl_q_p=2.970±0.046  ess_frac=0.005±0.005
+  ld_sd2_free x1 n=3  E_per_spin=-1.523±0.010  abs_m=0.868±0.003  chi=0.169±0.014  U4=0.660±0.000  frac_m_pos=0.667±0.471  kl_q_p=2.957±0.050  ess_frac=0.006±0.004
+  ld_sd8_free x1 n=3  E_per_spin=-1.527±0.005  abs_m=0.869±0.002  chi=0.169±0.008  U4=0.660±0.000  frac_m_pos=0.666±0.471  kl_q_p=2.939±0.030  ess_frac=0.003±0.002
+  ld_sd32_free x1 n=3  E_per_spin=-1.535±0.006  abs_m=0.873±0.001  chi=0.148±0.012  U4=0.661±0.000  frac_m_pos=0.333±0.471  kl_q_p=2.999±0.042  ess_frac=0.008±0.005
+
+T=2.6  exact E/D=-1.0817  Wolff: |m|=0.457 chi=2.396 U4=0.422
+  ld_free     x1 n=3  E_per_spin=-1.388±0.009  abs_m=0.820±0.005  chi=0.430±0.061  U4=0.651±0.002  frac_m_pos=0.666±0.469  kl_q_p=3.638±0.074  ess_frac=0.004±0.003
+  ld_sd2_free x1 n=3  E_per_spin=-1.246±0.033  abs_m=0.762±0.017  chi=0.777±0.232  U4=0.638±0.007  frac_m_pos=0.346±0.452  kl_q_p=3.636±0.045  ess_frac=0.004±0.003
+  ld_sd8_free x1 n=3  E_per_spin=-1.219±0.117  abs_m=0.747±0.059  chi=0.896±0.463  U4=0.631±0.022  frac_m_pos=0.490±0.400  kl_q_p=3.502±0.326  ess_frac=0.004±0.002
+  ld_sd32_free x1 n=3  E_per_spin=-1.330±0.029  abs_m=0.800±0.012  chi=0.496±0.134  U4=0.649±0.004  frac_m_pos=0.668±0.462  kl_q_p=3.675±0.070  ess_frac=0.004±0.002
+
+T=2.8  exact E/D=-0.9294  Wolff: |m|=0.347 chi=1.735 U4=0.301
+  ld_free     x1 n=3  E_per_spin=-0.566±0.014  abs_m=0.307±0.017  chi=1.312±0.064  U4=0.311±0.028  frac_m_pos=0.494±0.106  kl_q_p=3.849±0.072  ess_frac=0.008±0.001
+  ld_sd2_free x1 n=3  E_per_spin=-0.584±0.011  abs_m=0.327±0.014  chi=1.413±0.066  U4=0.342±0.025  frac_m_pos=0.486±0.052  kl_q_p=3.793±0.089  ess_frac=0.006±0.004
+  ld_sd8_free x1 n=3  E_per_spin=-0.585±0.012  abs_m=0.340±0.014  chi=1.473±0.069  U4=0.355±0.016  frac_m_pos=0.552±0.091  kl_q_p=3.903±0.076  ess_frac=0.004±0.002
+  ld_sd32_free x1 n=3  E_per_spin=-0.590±0.004  abs_m=0.333±0.004  chi=1.464±0.071  U4=0.344±0.007  frac_m_pos=0.575±0.056  kl_q_p=3.749±0.088  ess_frac=0.006±0.003
+
+T=3.0  exact E/D=-0.8256  Wolff: |m|=0.279 chi=1.210 U4=0.214
+  ld_free     x1 n=3  E_per_spin=-0.469±0.012  abs_m=0.238±0.006  chi=0.847±0.031  U4=0.230±0.014  frac_m_pos=0.519±0.032  kl_q_p=3.591±0.135  ess_frac=0.013±0.003
+  ld_sd2_free x1 n=3  E_per_spin=-0.473±0.009  abs_m=0.232±0.012  chi=0.864±0.065  U4=0.198±0.024  frac_m_pos=0.533±0.017  kl_q_p=3.540±0.048  ess_frac=0.018±0.010
+  ld_sd8_free x1 n=3  E_per_spin=-0.471±0.022  abs_m=0.232±0.013  chi=0.851±0.105  U4=0.200±0.002  frac_m_pos=0.500±0.053  kl_q_p=3.609±0.184  ess_frac=0.009±0.001
+  ld_sd32_free x1 n=3  E_per_spin=-0.483±0.020  abs_m=0.235±0.014  chi=0.879±0.103  U4=0.192±0.016  frac_m_pos=0.509±0.017  kl_q_p=3.472±0.159  ess_frac=0.014±0.004
+
+T=3.2  exact E/D=-0.7486  Wolff: |m|=0.236 chi=0.879 U4=0.149
+  ld_free     x1 n=3  E_per_spin=-0.420±0.012  abs_m=0.204±0.007  chi=0.617±0.042  U4=0.191±0.007  frac_m_pos=0.472±0.052  kl_q_p=3.177±0.071  ess_frac=0.011±0.003
+  ld_sd2_free x1 n=3  E_per_spin=-0.425±0.002  abs_m=0.203±0.007  chi=0.633±0.041  U4=0.175±0.015  frac_m_pos=0.529±0.062  kl_q_p=3.184±0.051  ess_frac=0.011±0.002
+  ld_sd8_free x1 n=3  E_per_spin=-0.429±0.017  abs_m=0.205±0.020  chi=0.668±0.110  U4=0.144±0.032  frac_m_pos=0.479±0.033  kl_q_p=3.146±0.049  ess_frac=0.013±0.008
+  ld_sd32_free x1 n=3  E_per_spin=-0.425±0.004  abs_m=0.201±0.004  chi=0.613±0.024  U4=0.179±0.007  frac_m_pos=0.494±0.036  kl_q_p=3.149±0.072  ess_frac=0.017±0.007

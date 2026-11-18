@@ -1,0 +1,10 @@
+Critical temperature sweep: model=ising
+============================================================
+Methods run: TB
+Grid: N=3  D=9  p_af=-
+T sweep: [1.0, 1.0] with 14 points, warm_start=False, n_disorder=1
+n_iter (GFN)=300  n_eval=80  mcmc_warmup=50000  mcmc_thin=50  lr_logz_mult=50.0  log_loss=True
+
+Estimated T_c (susceptibility peak):
+  TB-GFlowNet:  1.0000
+

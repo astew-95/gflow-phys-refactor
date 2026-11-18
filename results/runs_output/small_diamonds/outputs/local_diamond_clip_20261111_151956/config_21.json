@@ -1,0 +1,10 @@
+{
+  "method": "ld",
+  "lr": 0.003,
+  "clip": 1.0,
+  "seed": 1,
+  "threads": 2,
+  "max_iters": 8000,
+  "soft_seconds": 18.055555555555557,
+  "result_path": "/Users/alexastewart/research/gflow-phys/small_diamonds/outputs/local_diamond_clip_20261111_151956/run_21.json"
+}

@@ -1,0 +1,13 @@
+Critical temperature sweep: model=ising
+============================================================
+Ising 2D (periodic): exact infinite-lattice T_c = 2/ln(1+sqrt(2)) = 2.2692 J (Onsager). Finite-size rounding shifts the susceptibility peak ABOVE this value -- that is expected, not an error.
+
+Methods run: TB, KC
+Grid: N=5  D=25  p_af=-
+T sweep: [2.0, 3.0] with 14 points, warm_start=False, n_disorder=1
+n_iter (GFN)=3000  n_eval=800  mcmc_warmup=50000  mcmc_thin=50  lr_logz_mult=50.0  log_loss=True
+
+Estimated T_c (susceptibility peak):
+  TB-GFlowNet:  2.6624
+  KC-GFlowNet:  2.6752
+
